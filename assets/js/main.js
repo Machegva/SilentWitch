@@ -90,7 +90,7 @@
 								$body.addClass('is-article-visible');
 
 							// Deactivate all articles (just in case one's already active).
-								$main_articles.removeClass('active');
+							//	$main_articles.removeClass('active');
 
 							// Hide header, footer.
 								$header.hide();
@@ -388,8 +388,8 @@
 		// Initialize.
 
 			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
+			//	$main.hide();
+			//	$main_articles.hide();
 
 			// Initial article.
 				if (location.hash != ''
@@ -397,5 +397,6 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
+
 
 })(jQuery);
